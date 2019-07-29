@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Actor {
-    @Value("${actor.name}")
+     @Value("actorNmae")
     private String name;
-     @Value("${actor.age}")
+    @Value("12")
     private int age;
-    @Value("${actor.gender}")
+     @Value("male")
     private String gender;
 
 
