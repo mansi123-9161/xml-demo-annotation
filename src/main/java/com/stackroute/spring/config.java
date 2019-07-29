@@ -17,7 +17,7 @@ public class config {
     }
     @Bean//if you wish to give your name
     public Movie movieBean(){
-       Movie movie=new Movie();
+       Movie movie=new Movie(actorBean());
        movie.setActor(actorBean());
         return movie;
     }

@@ -1,6 +1,7 @@
 package com.stackroute.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -8,20 +9,11 @@ import org.springframework.stereotype.Component;
 public class Actor {
     @Value("${actor.name}")
     private String name;
-    @Value("${actor.age}")
+     @Value("${actor.age}")
     private int age;
     @Value("${actor.gender}")
     private String gender;
 
-    public Actor(String name, int age, String gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
-@Autowired
-    public Actor() {
-    System.out.println("constructor working");
-    }
 
     public String getName() {
         return name;
@@ -30,6 +22,7 @@ public class Actor {
     public void setName(String name) {
         this.name = name;
     }
+
     public int getAge() {
         return age;
     }
