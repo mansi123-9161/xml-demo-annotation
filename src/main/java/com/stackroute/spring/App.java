@@ -19,8 +19,7 @@ public class App
         Movie movie1=annotationConfigApplicationContext.getBean("movieBean1",Movie.class);
 //        Movie movie2=annotationConfigApplicationContext.getBean("movieBean2",Movie.class);
         out.println(movie1);
-//        out.println(movie2);
-//        out.println(movie1==movie2);
+        BeanLifeCycleDemoBean  beanLifecycleDemoBean = annotationConfigApplicationContext.getBean("beanLifecycleDemoBean", BeanLifeCycleDemoBean .class);
 
     }
 }
