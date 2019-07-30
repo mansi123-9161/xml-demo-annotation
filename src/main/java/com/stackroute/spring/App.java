@@ -17,10 +17,10 @@ public class App
 
         AnnotationConfigApplicationContext annotationConfigApplicationContext=new AnnotationConfigApplicationContext(config.class);
         Movie movie1=annotationConfigApplicationContext.getBean("movieBean1",Movie.class);
-        Movie movie2=annotationConfigApplicationContext.getBean("movieBean2",Movie.class);
+//        Movie movie2=annotationConfigApplicationContext.getBean("movieBean2",Movie.class);
         out.println(movie1);
-        out.println(movie2);
-        out.println(movie1==movie2);
+//        out.println(movie2);
+//        out.println(movie1==movie2);
 
     }
 }

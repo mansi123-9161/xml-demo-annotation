@@ -7,18 +7,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Actor {
-     @Value("actorNmae")
     private String name;
-    @Value("12")
+  //   @Value("12")
     private int age;
-     @Value("male")
+   //  @Value("male")
     private String gender;
 
 
     public String getName() {
         return name;
     }
-
+     @Value("${actor.name}")
     public void setName(String name) {
         this.name = name;
     }
@@ -26,7 +25,7 @@ public class Actor {
     public int getAge() {
         return age;
     }
-
+    @Value("${actor.age}")
     public void setAge(int age) {
         this.age = age;
     }
@@ -34,7 +33,7 @@ public class Actor {
     public String getGender() {
         return gender;
     }
-
+    @Value("${actor.gender}")
     public void setGender(String gender) {
         this.gender = gender;
     }

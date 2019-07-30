@@ -3,9 +3,13 @@ package com.stackroute.spring;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie {
+   // @Autowired
     Actor actor;
 
-    @Autowired
+    public Movie() {
+    }
+
+    //@Autowired
     public Movie(Actor actor) {
         this.actor=actor;
     }
@@ -13,7 +17,7 @@ public class Movie {
     public Actor getActor() {
         return actor;
     }
-
+    @Autowired
     public void setActor(Actor actor) {
         this.actor = actor;
     }
